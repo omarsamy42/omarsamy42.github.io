@@ -335,3 +335,20 @@ margin-top: auto;        /* يدفع الفوتر لأسفل */
 .form-card button[type="reset"]:hover {
   background: #555;
 }
+
+@media (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
