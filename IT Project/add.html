@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>course organizer</title>
+    <link rel="stylesheet" href="style.css">
+    
+  
+    
+    
+</head>
+
+<body>
+  <header>
+    <nav>
+        <br>
+        <div class="icon">📖</div>
+        <div class="logo">Course Organizer</div>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="course.html">My Courses</a>
+            <a href="add.html">Add Courses</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+</header>
+
+
+
+<font size="12"><h1 class="course" align="center">Explore New Courses</h1></font>
+<br>
+
+<div class="cards-wrapper">
+  <div class="card"><img src="ai.jpg"><div class="container"><h3>Artificial Intelligence</h3></div></div>
+  <div class="card"><img src="networkiing.jpg"><div class="net"><h3>Networking</h3></div></div>
+  <div class="card"><img src="machine-learning.jpg"><div class="container"><h3>Machine Learning</h3></div></div>
+  <div class="card"><img src="cyber.jpg"><div class="container"><h3>Cyber Security</h3></div></div>
+  <div class="card"><img src="web.jpg"><div class="container"><h3>Web Devolpment</h3></div></div>
+  <div class="card"><img src="android.png"><div class="container"><h4>Android</h3></div></div>  
+</div>
+<br>
+
+
+  
+
+  <section class="form-section">
+
+    <div class="form-card">
+      <h2>Add New Course</h2>
+
+      <form action="#" method="get">
+
+        <!-- Course Name -->
+        <label for="courseName">Course Name</label>
+        <select id="courseName" name="courseName" required>
+          <option value="">-- Select Course --</option>
+          <option>Artificial Intelligence</option>
+          <option>Data Structures</option>
+          <option>Operating Systems</option>
+          <option>Computer Networks</option>
+          <option>Database Systems</option>
+        </select>
+
+        <!-- Instructor -->
+        <label for="instructor">Instructor</label>
+        <select id="instructor" name="instructor" required>
+          <option value="">-- Select Instructor --</option>
+          <option>Dr. Ahmed</option>
+          <option>Dr. Ali</option>
+          <option>Dr. Sara</option>
+          <option>Dr. Omar</option>
+          <option>Dr. Mona</option>
+        </select>
+
+        <!-- Credit Hours -->
+        <label for="credits">Credit Hours</label>
+        <select id="credits" name="credits" required>
+          <option value="">-- Select Hours --</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+
+        <!-- Notes -->
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Additional notes..."></textarea>
+
+        <!-- Buttons -->
+        <button type="submit">Add Course</button>
+        <button type="reset">Clear</button>
+
+      </form>
+    </div>
+
+  </section>
+
+
+<footer class="foot" >
+<p><b>Personal Course Organizer website made by Eng. Omar el khateeb</b></p>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>
