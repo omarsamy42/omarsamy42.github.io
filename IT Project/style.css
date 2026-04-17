@@ -303,3 +303,10 @@ nav {
     text-align: center;
   }
 }
+
+
+.illustration-box {
+    font-size: 60px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
