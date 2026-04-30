@@ -1,0 +1,131 @@
+
+/*  navigation bar */
+*{
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 0;
+}
+
+.navbar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+    background-color: #007ea7;     
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 5%;
+    padding: 0;
+    margin: 0;
+}
+.nav-links a button{
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    font-size: 140%;
+}
+.nav-icons{
+    display: flex;
+    gap: 3%;
+    align-items: center;
+
+}
+.icon-btn{
+    background-color: #007ea7;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+#search{
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    width: 400px;
+    margin: 10px;
+       
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+/*  Categories */
+
+.categories{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.card1 , .card2 , .card3{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    
+
+}
+.card{
+    display: grid;
+    background-color: white;
+    padding: 30px;
+    width: 50%;
+    height: 60%;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px gray;
+    background-color: #98C1D9;
+    
+}
+.card a h3{
+    color: black;
+    margin: 10px;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+}
+.cartlogo{
+    width: 10%;
+}
+.cards button{
+    border-radius: 20px;
+    border: none;
+    font-size: larger;
+    font-weight: 600;
+}
+ /* footer */
+footer{
+    display: grid;
+    background-color: #007ea7;
+} 
+footer ul{
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(6,1fr);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+footer ul li img{
+    margin-top: 1%;
+    width: 10%;
+}
+footer p{
+    text-align: center;
+    margin-bottom: 20px;
+}
