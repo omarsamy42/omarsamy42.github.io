@@ -5,20 +5,22 @@
     text-decoration: none;
     margin: 0;
 }
-
 .navbar{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 10px 20px;
-    background-color: #007ea7;     
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007ea7;   
+
 }
 .nav-links{
     list-style: none;
     display: flex;
     gap: 5%;
     padding: 0;
-    margin: 0;
+    margin-left: 70px;
 }
 .nav-links a button{
     font-weight: bold;
@@ -54,6 +56,7 @@
     align-items: center;
     gap: 10px;
     flex-grow: 1;
+    margin-left: 70px;
 }
 
 /*  Categories */
@@ -75,14 +78,15 @@
     display: grid;
     background-color: white;
     padding: 30px;
-    width: 50%;
-    height: 60%;
+    width: 25%;
+    height: 50%;
     margin-top: 20%;
     margin-bottom: 10%;
     margin-left: 20%;
     border-radius: 20px;
     box-shadow: 0 0 10px gray;
     background-color: #98C1D9;
+    
     
 }
 .card a h3{
