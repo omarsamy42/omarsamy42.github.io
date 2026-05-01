@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">CompuHub</div>
+        
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <div class="search-wrapper">
+            <input type="text" placeholder="Search products..." class="search-input">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+        
+        <div class="nav-icons">
+            <button class="icon-btn" onclick="window.location.href='cart.html'">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="icon-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="icon-btn" onclick="window.location.href='profile.html'" id="profile-btn">
+                <div class="profile-avatar-small"></div>
+            </button>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="profile-container">
+            
+            <aside class="profile-sidebar">
+                <div class="huge-avatar-empty"></div>
+                <button type="button" class="logout-btn">log out</button>
+            </aside>
+
+            <section class="profile-main">
+                <form action="#" class="profile-form">
+                    <div class="form-grid">
+                        <input type="text" placeholder="name">
+                        <input type="email" placeholder="email">
+                        <input type="text" placeholder="country">
+                        <input type="text" placeholder="city">
+                        <input type="text" placeholder="Address" class="full-width">
+                        <input type="tel" placeholder="phone number">
+                        <input type="text" placeholder="postal code">
+                        <select>
+                            <option disabled selected>Gender(selection box)</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                        <input type="text" placeholder="date of birth" onfocus="(this.type='date')" onblur="(this.type='text')">
+                    </div>
+
+                    <div class="action-buttons">
+                        <button type="button" class="btn-action">discard</button>
+                        <button type="submit" class="btn-action">confirm</button>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Track Order</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Shipping Info</a>
+            <a href="#">FAQs</a>
+        </div>
+        
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        
+        <div class="copyright">© 2026</div>
+    </footer>
+
+</body>
+</html>
