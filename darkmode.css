@@ -149,6 +149,11 @@ body {
     cursor: pointer;
 }
 
+.icon-btn a{
+    text-decoration: none;
+    color: white;
+}
+
 
 .ad-section {
     display: flex;
