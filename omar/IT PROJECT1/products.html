@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="productslight.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>laptops</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <title>products</title>
 </head>
 <body>
     <div class="header">
@@ -17,92 +18,279 @@
                 <div class="center">
                     <ul class="nav-links">
                         <li><a href="index.html"><button>Home</button></a></li>
-                        <li><a href="allproducts.html"><button>Products</button></a></li>
+                        <li><a href="products.html"><button>Products</button></a></li>
                         <li><a href="contact.html"><button>Contact</button></a></li>
                         <li><a href="about.html"><button>About</button></a></li>
                     </ul> 
                 </div>
-                <div class="search-wrapper">
-                    <input type="search" id="search" placeholder="search here..." style="margin-left: 200px;">
-                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <div>
+                    <input type="search" id="search" placeholder="search here" style="width: 360px;  height: 30px; margin-left: 100px;">
                 </div>
                 
-                <div class="nav-icons" style="margin-left: 150px;">
-                    <a href="cart.html"><button class="icon-btn"><i class="fa-solid fa-cart-shopping" style="font-size: 24px; color: white;" ></i></button></a>
-                    <a href="productsdark.html"><button class="icon-btn"><i class="fa-solid fa-moon" style="font-size: 24px; color: white;"></i></button></a>
-                    <a href="profile.html"><button class="icon-btn" style="font-size: 24px; color: white;"><i class="fa-solid fa-user"></i></button></a>
+                <div class="nav-icons" style="margin-left: 250px;">
+
+                    <div onclick="open_close_cart()" class="icon_cart icon-btn icon">
+                        <i class="fa-solid fa-cart-shopping" style="font-size: 36px;">
+                        </i>
+                    <span class="count">0</span>
+
+                    </div>
+
+                    <div class="icon">
+                    <button class="icon-btn">
+                    <i class="fa-solid fa-sun" style="font-size: 36px;"></i></button>
+                    </div>
+
+                    <div class="icon">
+                    <a href="profile.html">
+                    <i class="fa-solid fa-user" style="font-size: 36px; color: #000;"></i>
+                    <button class="icon-btn"></button></a></div>
                 </div>
             </nav>
         </main>  
     </div>
 
-    <!-- <div class="banner">
-        
-        <img src="images/laptops2.png" alt="laptops">
+   <!-- cart-->
+    <div class="cart  ">
 
-    </div> -->
-    <h2 class="categories">laptops</h2>    
-        <div class="card1">
-            <div class="card">
-                <a href="detials.html">
-                    <img src="images/asus.png" alt="asus" class="product">
-                        <h3>ASUS TUF <br>Gaming F 15</h3>
+        <div class="top_cart">
+            <h2>Cart Item : <span class="count_item_cart">0</span></h2>
+            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+
+        <div class="items_in_cart" id="cart_item">
+
+        
+
+            <div class="item_cart">
+                <img src="images/asus.png" >
+                <div class="content">
+                    <h4>Lorem ipsum dolor sit amet </h4>
+                    <p class="price_cart">$80</p>
+                    <div class="quantity_control">
+                        <button class="decreade_quantity">-</button>
+                        <span class="quantity">3</span>
+                        <button class="increade_quantity">+</button>
+                    </div>
+                </div>
+                <button class="delete_item"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+
+            <div class="item_cart">
+                <img src="images/cooler.png">
+                <div class="content">
+                    <h4>Lorem ipsum dolor sit amet </h4>
+                    <p class="price_cart">$80</p>
+                    <div class="quantity_control">
+                        <button class="decreade_quantity">-</button>
+                        <span class="quantity">3</span>
+                        <button class="increade_quantity">+</button>
+                    </div>
+                </div>
+                <button class="delete_item"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+
+        </div>
+            
+        <div class="bottom_cart">
+                <div class="total">
+                    <p>subtotal</p>
+                    <p class="price_cart_total">$0</p>
+                </div>
+                <div class="button_cart">
+                    <a  href="#" class="btn_cart">checkout</a>
+                    <span onclick="open_close_cart()" class="btn_cart trans_bg">shop more </span>
+                </div>
+        </div>
+
+
+    </div>
+
+    <section>
+
+        <h2 class="categories">Laptops</h2>
+
+            <div class="cards">
+                <div class="card1">
+                <div class="card">
+                    <a href="detials.html">
+                        <img src="images/asus.png" alt="asus" class="product">
+                        <h3>ASUS TUF Gaming F 15</h3>
                         <h3>Price : 600$</h3>
-                </a>    
-                <button>
-                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
-                </button>
-            </div>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
 
-            <div class="card">
-                <a href="detials2.html">
-                    <img src="images/vivobook.png" alt="vivobook" class="product">
-                    <h3>ASUS Vivobook 16</h3>
-                    <h3>Price : 800$</h3>
-                </a>    
-                <button style="margin-top: 20px;">
-                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
-                </button>
-            </div>
+                <div class="card">
+                    <a href="detials2.html">
+                        <img src="images/vivobook.png" alt="vivobook" class="product">
+                        <h3>ASUS Vivobook 16</h3>
+                        <h3>Price : 800$</h3>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
 
-            <div class="card">
-                <a href="detials3.html">
-                    <img src="images/victus.png" alt="victus" class="product">
-                    <h3>HP Victus 15</h3>
-                    <h3>Price : 720$</h3>
-                </a>
-                <button style="margin-top: 20px;">
-                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
-                </button>
+                <div class="card">
+                    <a href="detials3.html">
+                        <img src="images/victus.png" alt="victus" class="product">
+                        <h3>HP Victus 15</h3>
+                        <h3>Price : 720$</h3>
+                    </a>
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
                     
-            </div>
+                </div>
                 
-            <div class="card">
-                <a href="detials4.html">
-                    <img src="images/lenovoloq.png" alt="lenovo" class="product">
-                    <h3>Lenovo LOQ essential</h3>
-                    <h3>Price : 730$</h3>
-                </a>    
-                <button style="margin-top: 20px;">
-                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
-                </button>
-            </div> 
+                <div class="card">
+                    <a href="detials4.html">
+                        <img src="images/lenovoloq.png" alt="lenovo" class="product">
+                        <h3>Lenovo LOQ essential</h3>
+                        <h3>Price : 730$</h3>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div> 
                 
-            <div class="card">
-                <a href="detials5.html">
-                    <br><br>
-                    <img src="images/macbook.png" alt="macbook" class="product">
-                    <br><br><br>
-                    <h3>MacBook Pro 14</h3>
-                    <h3>price : 1400$</h3>
-                </a>    
-                <button style="margin-top: 20px;">
-                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
-                </button>
-            </div>
-            </div>
+                <div class="card">
+                    <a href="detials5.html">
+                        <br><br>
+                        <img src="images/macbook.png" alt="macbook" class="product">
+                        <br><br><br>
+                        <h3>MacBook Pro 14</h3>
+                        <h3>price : 1400$</h3>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+                </div>
         
-    <footer class="footer">
+        <h2 class="categories">Accessories</h2>
+                <div class="card2">
+                <div class="card">
+                    <a href="detials6.html">
+                        <img src="images/mouse.png" alt="mouse" class="product">
+                        <h3>AULA S20 USB Wired Gaming Mouse</h3>
+                        <h3>Price : 15$</h3>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+                <div class="card">
+                    <a href="detials7.html">
+                        <img src="images/headphone.png" alt="headphone" class="product">
+                        <h3>ONIKUMA K10 RGB Gaming Headset</h3>
+                        <h3>Price : 25$</h3>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+                <div class="card">
+                    <a href="detials8.html">
+                        <img src="images/keyboard.png" alt="keyboard and mouse" class="product">
+                        <h3>ASUS TUF Gaming RA07 K3</h3>
+                        <h3>Price : 64$</h3>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+                <div class="card">
+                    <a href="detials9.html">
+                        <img src="images/gaming.png" alt="keyboard" class="product">
+                        <h3>GameSir G7 SE Wired Controller</h3>
+                        <h3>Price : 44$</h3>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+                <div class="card">
+                    <a href="detials10.html">
+                        <img src="images/bag.png" alt="laptop's bag" class="product">
+                        <h3>TAIKESEN Laptop Bag</h3>
+                        <h3>Price : 30$</h3>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+                </div>
+
+        <h2 class="categories">Hardware Components</h2>
+               <div class="card3">
+               <div class="card">
+                    <a href="detials11.html">
+                        <img src="images/amd2.png" alt="AMD" class="product">
+                        <h3>AMD Ryzen 5 8500G Desktop processor (Tray)</h3>
+                        <h3>Price : 174$</h3>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+ 
+                <div class="card">
+                    <a href="detials12.html">
+                        <img src="images/case.png" alt="Case" class="product">
+                        <h3>Case GIGABYTE C200 GLASS</h3>
+                        <h3>Price : 42$</h3>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+                <div class="card">
+                    <a href="detials13.html">
+                        <img src="images/router.png" alt="Router" class="product">
+                        <h3>Airline W6 184QAX Access point Wifi</h3>
+                        <h3>Price : 80$</h3>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+                <div class="card">
+                    <a href="detials14.html">
+                        <img src="images/cooler.png" alt="Cooler" class="product">
+                        <h3>Cooler Master MWE Gold 1050 V2</h3>
+                        <h3>Price : 147$</h3>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+
+                <div class="card">
+                    <a href="detials15.html">
+                        <img src="images/amd.png" alt="AMD" class="product">
+                        <h3>AMD Ryzen 7 5700G Desktop Processor with Radeon Graphic</h3>
+                        <h3>Price : 234$</h3>
+                    </a>    
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+                </div>
+
+    </section>
+
+     <footer class="footer">
         <div class="footer-links">
             <a href="#">Track Order</a>
             <a href="#">Return Policy</a>
@@ -121,5 +309,8 @@
         <div class="copyright">© 2026</div>
      
     </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="java.js"></script>
     </body>
     </html>
