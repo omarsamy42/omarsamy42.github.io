@@ -120,7 +120,7 @@ body{
     opacity: 1;
     transform: translateY(-30px);
     transition: all 1.5s ease-in-out;
-    gap: 15px;
+    gap: 30px;
     
 }
 .card{
@@ -181,7 +181,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    margin: 100px 10px 10px 10px;
+    margin: 120px 10px 10px 10px;
     border-radius: 15px;
     background-color: #020617;   
 }
