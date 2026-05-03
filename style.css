@@ -1,18 +1,26 @@
 
 body {
+    padding-top: 82px;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     background-color: #f5f5f5;
     color: #333;
 }
 
-
+ .nav-links{
+    z-index: 1800;
+    display: flex;
+    gap: 20px;
+}
 .navbar {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: #007EA7;
+    background-color: #A89B8C;
     padding: 20px 30px;
     color: white;
 }
@@ -42,12 +50,14 @@ body {
 
 
 .nav-icons {
+    padding-right: 30px;
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    
 }
 
-.icon-btn {
-    background: none;
+.nav-icons .icon-btn {
+    background:#ccc ;
     border: none;
     color: white;
     font-size: 18px;
@@ -129,7 +139,7 @@ body {
 .adv-bar img {
   width: 100%;
   height: 100%;
-  object-fit: cover; ء
+  object-fit: cover; 
   display: block;
 }
 
@@ -177,7 +187,6 @@ body {
 
 
 .cards-container{
-   
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
@@ -189,7 +198,8 @@ body {
     color: rgba(0, 0, 0, 0.975);
 }
 .card {
-  
+      z-index: -200;
+
     width: 300px;
     border: 1px solid #ddd;
     border-radius: 12px;
@@ -258,3 +268,54 @@ body {
 
     font-weight: bold;
 }
+/* swiper */
+.slider{
+    height: auto;
+    max-width:  1200px;  
+    margin: 20px auto;  
+    padding: 0 ;
+     z-index: -200;
+    
+position: relative;
+overflow: hidden;
+}
+
+.slider.container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.slider.container .slide-swp  {
+   
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px !important;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.slide-swp .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    display: block;
+    align-items: center;
+}
+ .swiper-wrapper{
+    height: auto;
+    width: 200px;
+   
+}
+.swiper-pagination span {
+    background: white;
+    width: 50px;
+    cursor: pointer;
+    height: 10px;
+    border-radius: 3px ;
+    opacity: 1;
+}
+ .swiper-pagination-bullet-active{
+    background: orange !important;
+    width: 40px;
+ }
+ 
