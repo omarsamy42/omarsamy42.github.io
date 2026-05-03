@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shopping online</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-   
+    
     <header class="navbar">
         <div class="logo">CompuHub</div>
         
@@ -19,14 +20,11 @@
             <a href="contact.html" class="active">Contact</a>
             <a href="about.html">About</a>
         </nav>
-
+    
          <div class="search-wrapper">
             <input type="text" placeholder="Search products..." class="search-input">
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
         </div>
-
-       
-        
         <div class="nav-icons">
             <button class="icon-btn" onclick="window.location.href='cart.html'">
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -40,9 +38,34 @@
             </button>
         </div>
     </header>
-    <div class="adv-bar">
-        <img src="web photo.jpeg">
+
+
+     <!-- swiper -->
+
+    <div class="slider">
+        <div class="container">
+            <div class="slide-swp mySwiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"> <img src="web photo.jpeg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"> <img src="web photo.jpeg" alt=""></a>
+
+
+                    </div>
+                    <div class="swiper-slide">                       
+                        <a href="#"> <img src="web photo.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+        
     </div>
+
     <main class="content">
         <h1>Welcome To <b class="logo">Compuhub</b></h1>
         <div class="question">
@@ -71,11 +94,7 @@
 
     </main>
     <section>
-        <div class="c"
-
-
-
-
+        <div class="c"></div>
 
     </section>
     <footer class="footer">
@@ -97,5 +116,8 @@
         <div class="copyright">© 2026</div>
      
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="omar/IT PROJECT1/java.js"></script>
 
 </body>
+</html>
