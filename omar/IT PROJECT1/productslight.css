@@ -182,3 +182,125 @@ body{
 .copyright {
     font-weight: bold;
 }
+
+
+
+
+/* cart */
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    z-index: 1100;
+    background: bisque;
+    border: 2px solid black;
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}.cart .active{
+    right: 0x;
+}
+.cart .top_cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart .top_cart .close_cart i{
+    cursor: pointer;
+    font-size: 25px;
+}
+.cart .items_in_cart{
+    padding: 20px 0;
+    border-block: 1px solid black;
+    margin-block: 20px;
+    height: 100%;
+    overflow-y: auto;
+
+}
+.cart .items_in_cart .item_cart{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    border-bottom: 1px solid black;
+    
+}
+.cart .items_in_cart .item_cart img{
+    width: 80px;
+}
+.cart .items_in_cart .item_cart h4{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+.cart .items_in_cart .item_cart .delete_item i{
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cart .items_in_cart .item_cart .delete_item i:hover{
+    color: red;
+}
+.cart .items_in_cart .item_cart .quantity_comntrol{
+    display: flex;
+    align-self: center;
+    gap: 5px;
+    margin-top: 5px;
+
+}
+.cart .items_in_cart .item_cart .quantity_comntrol span{
+    font-size: 18px;
+    display: flex;
+    min-width: 40px;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.cart .items_in_cart .item_cart .quantity_control button{
+    width: 27px;
+    height: 27px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 2px;
+    border: 1px solid black; 
+    cursor: pointer;
+}
+.cart .bottom_cart .total{
+    display: flex;
+
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.cart .bottom_cart .button_cart{
+    display: flex;
+    gap: 20px;
+}
+.cart .bottom_cart .button_cart .btn_cart{
+    text-transform: uppercase;
+    border: 1px solid gray;
+    cursor: pointer;
+    background: #FAEDCD;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.cart .bottom_cart .button_cart .trans_bg{
+    background:transparent;
+
+}
+
