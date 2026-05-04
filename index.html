@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shopping online</title>
-    <link rel="stylesheet" href="lightmode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="lightmode.css">
+
 
 </head>
 <body>
@@ -15,8 +17,8 @@
         
         <nav class="nav-links">
             <a href="index.html">Home</a>
-            <a href="omar/IT PROJECT1/allproducts.html">Products</a>
-            <a href="shady/contact.html" class="active">Contact</a>
+            <a href="omarsamy42.github.io-main/omar/IT PROJECT1/allproducts.html">Products</a>
+            <a href="omarsamy42.github.io-main/shady/contact.html" class="active">Contact</a>
             <a href="about.html">About</a>
         </nav>
 
@@ -29,23 +31,49 @@
         
         <div class="nav-icons">
             <div class="icon-btn">
-                <a href="moaz/signin.html">Sign-In</a>
+                <a href="omarsamy42.github.io-main/moaz/signin.html">Sign-In</a>
             </div>
             <button class="icon-btn" onclick="window.location.href='cart.html'">
                 <i class="fa-solid fa-cart-shopping"></i>
             </button>
-                <button class="icon-btn" onclick="window.location.href='indexdark.html'">
-                    <i class="fa-solid fa-moon" ></i>
+                <button class="icon-btn">
+                    <i class="fa-solid fa-moon" onclick="window.location.href='indexdark.html'"></i>
                 </button>
-            <button class="icon-btn" onclick="window.location.href='shady/profile.html'" id="profile-btn">
+            <button class="icon-btn" onclick="window.location.href='omarsamy42.github.io-main/shady/profile.html'" id="profile-btn">
                 <i class="fa-solid fa-circle-user"></i>
                 
             </button>
         </div>
     </header>
-    <div class="adv-bar">
-        <img src="web photo.jpeg">
+<!-- swiper  -->
+     <div class="slider">
+        <div class="container">
+            <div class="slide-swp mySwiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"> <img src="web photo.jpeg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"> <img src="web photo.jpeg" alt=""></a>
+
+
+                    </div>
+                    <div class="swiper-slide">                       
+                        <a href="#"> <img src="web photo.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+        
     </div>
+
+    
+    <!-- <div class="adv-bar">
+        <img src="web photo.jpeg">
+    </div> -->
     <main class="content">
         <div class="Welcome">
             <h1>Welcome To <b class="logo">Compuhub</b></h1>
@@ -56,19 +84,19 @@
         
         <div class="cards-container">
             <div class="card">
-                <a href="omar/IT PROJECT1/products.html">
+                <a href="#">
                 <img src="laptops.jpeg" class="card-img">
                 <h3>LAPTOPS</h3>
                 </a>
             </div>
             <div class="card">
-                <a href="omar/IT PROJECT1/products2.html">
+                <a href="#">
                 <img src="accessories.jpeg" class="card-img">
                 <h3>ACCESSORIES</h3>
                 </a>
             </div>
             <div class="card">
-                <a href="omar/IT PROJECT1/products3.html">
+                <a href="#">
                 <img src="hardware (1).jpeg" class="card-img">
                 <h3>HARDWARE COMPONENTS</h3>
                 </a>
@@ -96,5 +124,8 @@
         <div class="copyright">© 2026</div>
      
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="omar/IT PROJECT1/java.js"></script>
 
 </body>
+</html>
