@@ -42,7 +42,6 @@ body{
     cursor: pointer;
 }
 .nav-links a button:hover{
-    background-color: #022d67; /* !محتاجين لون هنا؟؟ */
     color:#38bdf8;
     transform: translateY(-2px);
 }
@@ -72,6 +71,7 @@ body{
 #search{
     width: 150px;
     height: 40px;
+    background-color: #020617; 
     border-radius: 20px;
     border: none;
     padding: 0 10px 0 40px;
