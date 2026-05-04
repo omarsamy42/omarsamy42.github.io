@@ -255,8 +255,7 @@ body {
     gap: 80px;
     justify-content: center;
     padding: 100px;
-    position: relative;
-    z-index: -500;
+   
 }
 .cards-container a{
     text-decoration: none;
@@ -292,7 +291,7 @@ body {
     align-items: center;
     padding: 10px;
     border: 2px solid;
-    margin: 200px 30px 0 10px;
+    margin: 100px 30px 0 10px;
     border-radius: 15px;
     background-color: #B19A81;
     gap: 20px;   
