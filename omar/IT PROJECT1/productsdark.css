@@ -40,6 +40,7 @@ body{
     border-radius: 20px;
     padding: 8px 20px;
     cursor: pointer;
+    font-wieght: bold;
 }
 .nav-links a button:hover{
     color:#38bdf8;
