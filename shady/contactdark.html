@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="contactdark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">CompuHub</div>
+        
+        <nav class="nav-links">
+            <a href="indexdark.html">Home</a>
+            <a href="allproductsdark.html">Products</a>
+            <a href="contactdark.html" class="active">Contact</a>
+            <a href="aboutdark.html">About</a>
+        </nav>
+
+        <div class="search-wrapper">
+            <input type="text" placeholder="Search products..." class="search-input">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+        
+        <div class="nav-icons">
+            <button class="icon-btn" onclick="window.location.href='cartdark.html'">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <a href="contact.html"
+            " class="icon-btn">
+                <i class="fa-solid fa-sun"></i>
+                </a>
+            </button>
+            <button class="icon-btn" onclick="window.location.href='profiledark.html'" id="profile-btn">
+                <div class="profile-avatar" id="avatar-text"></div>
+            </button>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="contact-box">
+            <h1>Need Help? Contact Us</h1>
+            <form action="#" method="POST">
+                <div class="row">
+                    <input type="text" name="userName" placeholder="Enter Your Name" required>
+                    <input type="email" name="userEmail" placeholder="Enter Your Email" required>
+                </div>
+                <textarea name="userComment" placeholder="Enter Your Comment" required></textarea>
+                <div class="btn-container">
+                    <button type="submit" class="send-btn">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Track Order</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Shipping Info</a>
+            <a href="#">FAQs</a>
+        </div>
+        
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        
+        <div class="copyright">&copy; 2026</div>
+    </footer>
+
+</body>
+</html>
