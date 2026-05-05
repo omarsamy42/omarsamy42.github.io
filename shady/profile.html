@@ -13,10 +13,10 @@
         <div class="logo">CompuHub</div>
         
         <nav class="nav-links">
-            <a href="../index.html">Home</a>
-            <a href="../omar/IT PROJECT1/allproducts.html">Products</a>
-            <a href="contact.html">Contact</a>
-            <a href="../aboutlight.html">About</a>
+             <a href="../index.html">Home</a>
+                <a href="../omar/IT PROJECT1/allproducts.html">Products</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="aboutlight.html">About</a>
         </nav>
 
         <div class="search-wrapper">
@@ -28,10 +28,11 @@
             <button class="icon-btn" onclick="window.location.href='cart.html'">
                 <i class="fa-solid fa-cart-shopping"></i>
             </button>
-            <button class="icon-btn" onclick="window.location.href='profiledark.html'">
+            <button class="icon-btn" id="theme-switch">
                 <i class="fa-solid fa-moon"></i>
             </button>
-            <button class="icon-btn" onclick="window.location.href='profile.html'" id="profile-btn">
+            <button class="icon-btn"  id="profile-btn">
+                <a href="profile.html"></a>
                 <div class="profile-avatar-small"></div>
             </button>
         </div>
@@ -89,6 +90,6 @@
         
         <div class="copyright">© 2026</div>
     </footer>
-
+<script src="../omar/IT PROJECT1/button_dark_light.js"></script>
 </body>
 </html>
