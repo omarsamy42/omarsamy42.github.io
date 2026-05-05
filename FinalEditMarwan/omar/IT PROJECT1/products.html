@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="productslight.css">
+    <title>laptops</title>
+</head>
+<body>
+    <div class="header">
+        <main>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1 class="name">CompuHub</h1>
+                </div>
+                <div class="center">
+                    <ul class="nav-links">
+                        <li><a href="../../index.html"><button>Home</button></a></li>
+                        <li><a href="allproducts.html"><button>Products</button></a></li>
+                        <li><a href="../../shady/contact.html"><button>Contact</button></a></li>
+                        <li><a href="../../aboutlight.html"><button>About</button></a></li>
+                    </ul>
+                </div>
+                <div class="search-wrapper">
+                    <input type="search" id="search" placeholder="search here..." style="margin-left: 200px;">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+                <div class="nav-icons" style="margin-left: 150px;">
+                    <span class="sign-in-wrapper">
+                        <a href="../../moaz/signup.html" onclick="localStorage.setItem('returnPage', window.location.href)">
+                            <button class="icon-btn" style="color:white;">Sign-In</button>
+                        </a>
+                    </span>
+                    <div onclick="open_close_cart()" class="icon_cart icon-btn">
+                        <i class="fa-solid fa-cart-shopping" style="font-size: 24px; color: white;"></i>
+                        <span class="count">0</span>
+                    </div>
+                    <button id="theme-switch" class="icon-btn"><i class="fa-solid fa-moon" style="font-size: 24px; color: white;"></i></button>
+                    <a href="../../shady/profile.html" onclick="localStorage.setItem('profileReturnPage', window.location.href)">
+                        <button class="icon-btn" style="font-size: 24px; color: white;"><i class="fa-solid fa-user"></i></button>
+                    </a>
+                </div>
+            </nav>
+        </main>
+    </div>
+
+    <h2 class="categories">Laptops</h2>
+    <div class="card1">
+        <div class="card">
+            <a href="detialslight.html"><img src="images/asus.png" alt="asus" class="product"><h3>ASUS TUF <br>Gaming F 15</h3><h3>Price : 600$</h3></a>
+            <button><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="card">
+            <a href="detialslight2.html"><img src="images/vivobook.png" alt="vivobook" class="product"><h3>ASUS Vivobook 16</h3><h3>Price : 800$</h3></a>
+            <button style="margin-top: 20px;"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="card">
+            <a href="detialslight3.html"><img src="images/victus.png" alt="victus" class="product"><h3>HP Victus 15</h3><h3>Price : 720$</h3></a>
+            <button style="margin-top: 20px;"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="card">
+            <a href="detialslight4.html"><img src="images/lenovoloq.png" alt="lenovo" class="product"><h3>Lenovo LOQ essential</h3><h3>Price : 730$</h3></a>
+            <button style="margin-top: 20px;"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="card">
+            <a href="detialslight5.html"><br><br><img src="images/macbook.png" alt="macbook" class="product"><br><br><br><h3>MacBook Pro 14</h3><h3>price : 1400$</h3></a>
+            <button style="margin-top: 20px;"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Track Order</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Shopping Info</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="social-links">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <div class="copyright">© 2026</div>
+    </footer>
+
+    <!-- Cart Panel -->
+    <div class="cart">
+        <div class="top_cart">
+            <h2>Cart Items : <span class="count_item_cart">0</span></h2>
+            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div class="items_in_cart" id="cart_item"></div>
+        <div class="bottom_cart">
+            <div class="total">
+                <p>Subtotal</p>
+                <p class="price_cart_total">$0</p>
+            </div>
+            <div class="button_cart">
+                <a href="#" class="btn_cart">Checkout</a>
+                <span onclick="open_close_cart()" class="btn_cart trans_bg">Shop More</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="button_dark_light.js"></script>
+    <script src="java.js"></script>
+</body>
+</html>

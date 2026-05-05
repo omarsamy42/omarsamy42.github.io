@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">CompuHub</div>
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../omar/IT PROJECT1/allproducts.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="../aboutlight.html">About</a>
+        </nav>
+        <div class="search-wrapper">
+            <input type="text" placeholder="Search products..." class="search-input">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+        <div class="nav-icons">
+            <button class="icon-btn" id="theme-switch">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="icon-btn" id="profile-btn">
+                <div class="profile-avatar-small"></div>
+            </button>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="profile-container">
+            <aside class="profile-sidebar">
+                <div class="huge-avatar-empty"></div>
+                <!-- Logout: clears login state and returns to previous page -->
+                <button type="button" class="logout-btn" onclick="logOut()">Log Out</button>
+            </aside>
+
+            <section class="profile-main">
+                <form action="#" class="profile-form">
+                    <div class="form-grid">
+                        <input type="text" id="profile-name" placeholder="name">
+                        <input type="email" id="profile-email" placeholder="email">
+                        <input type="text" id="profile-country" placeholder="country">
+                        <input type="text" id="profile-city" placeholder="city">
+                        <input type="text" id="profile-address" placeholder="Address" class="full-width">
+                        <input type="tel" id="profile-phone" placeholder="phone number">
+                        <input type="text" id="profile-postal" placeholder="postal code">
+                        <select id="profile-gender">
+                            <option disabled selected>Gender(selection box)</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                        <input type="text" id="profile-dob" placeholder="date of birth" onfocus="(this.type='date')" onblur="(this.type='text')">
+                    </div>
+                    <div class="action-buttons">
+                        <button type="button" class="btn-action" onclick="discardProfile()">Discard</button>
+                        <button type="button" class="btn-action" onclick="saveProfile()">Confirm</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Track Order</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Shipping Info</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="copyright">© 2026</div>
+    </footer>
+
+    <script src="../omar/IT PROJECT1/button_dark_light.js"></script>
+    <script>
+        // Load saved profile data into fields on page load
+        window.addEventListener("DOMContentLoaded", function () {
+            const user = JSON.parse(localStorage.getItem("loggedInUser") || "{}");
+            const profile = JSON.parse(localStorage.getItem("userProfile") || "{}");
+
+            if (user.email) document.getElementById("profile-email").value = user.email;
+            if (profile.name)    document.getElementById("profile-name").value    = profile.name;
+            if (profile.country) document.getElementById("profile-country").value = profile.country;
+            if (profile.city)    document.getElementById("profile-city").value    = profile.city;
+            if (profile.address) document.getElementById("profile-address").value = profile.address;
+            if (profile.phone)   document.getElementById("profile-phone").value   = profile.phone;
+            if (profile.postal)  document.getElementById("profile-postal").value  = profile.postal;
+            if (profile.gender)  document.getElementById("profile-gender").value  = profile.gender;
+            if (profile.dob)     document.getElementById("profile-dob").value     = profile.dob;
+        });
+
+        function saveProfile() {
+            const profile = {
+                name:    document.getElementById("profile-name").value,
+                country: document.getElementById("profile-country").value,
+                city:    document.getElementById("profile-city").value,
+                address: document.getElementById("profile-address").value,
+                phone:   document.getElementById("profile-phone").value,
+                postal:  document.getElementById("profile-postal").value,
+                gender:  document.getElementById("profile-gender").value,
+                dob:     document.getElementById("profile-dob").value,
+            };
+            // Also update email in loggedInUser
+            const email = document.getElementById("profile-email").value;
+            const user = JSON.parse(localStorage.getItem("loggedInUser") || "{}");
+            user.email = email;
+            localStorage.setItem("loggedInUser", JSON.stringify(user));
+            localStorage.setItem("userProfile", JSON.stringify(profile));
+            alert("Profile saved!");
+        }
+
+        function discardProfile() {
+            // Reload page to reset fields to saved values
+            window.location.reload();
+        }
+
+        function logOut() {
+            localStorage.removeItem("loggedInUser");
+            const returnPage = localStorage.getItem("profileReturnPage") || "../index.html";
+            window.location.href = returnPage;
+        }
+    </script>
+</body>
+</html>

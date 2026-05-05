@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    columns: var(--text-primary);
+    background-color: var(--background-body);
+}
+:root{
+    --background-body:#ffffff;
+       --text-primary:#000000;
+    --navbar-background:#B19A81;
+     --navbar-text:white;
+    --card-border:1px solid #000;
+    --card-background:#d2bba0;
+    --footer-background:#B19A81;
+    --footer-link:#000;
+      --footer-text:#000;
+     --icon-color:white;
+    --icon-background:#B19A81;
+    --search-background:white;
+    --search:#007EA7;
+    --hover-background:#FAEDCD;
+    --hover-color:#a89b8c;
+      --shadow:0 0 25px gray;
+    --border:#1e293b;
+    --text:#333;
+}
+body.dark{
+     --background-body:#0f172a;
+    --text-primary:#ffffff;
+      --navbar-background:#020617;
+    --navbar-text:#38bdf8;
+    --card-border:1px solid #38bdf8;
+    --card-background: #1e293b;
+      --footer-background:#020617;
+    --footer-link:#38bdf8;
+    --footer-text:#ffffff;
+    --icon-color:$38bdf8;
+      --icon-background:#020617;
+    --search-background:rgba(255, 255, 255, 0.1);
+    --search:#007EA7;
+      --hover-background:#38bdf8;
+    --hover-color:white;
+       --shadow:0 0 25px rgba(56, 189, 248, 0.3);
+    --border:#38bdf8;
+    --text:#94a3b8;
+}
+
+.logo{
+    color: white;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:var(--navbar-background);
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.nav-links a button{
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+    color: var(--text-primary);
+    background-color: var(--background-body);
+}
+.nav-links a button:hover{
+    background-color: var(--hover-background);
+    color:var(--hover-color);
+    transform: translateY(-2px);
+}
+.nav-icons{
+    display: flex;
+    gap: 3%;
+    align-items: center;
+}
+.icon-btn{
+    background-color:var(--icon-background);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.icon-btn:hover{
+    transform: scale(1.2);
+}
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#search{
+    width: 50px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 10px 0 40px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    cursor: pointer;
+       
+}
+#search:focus{
+    width: 200px;
+    cursor: text;
+}
+.search-icon{
+    position: absolute;
+    left: 212px;
+    color: #007EA7;
+    pointer-events: none;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    margin-left: 70px;
+}
+
+/* product container */
+body > img {
+    display: block;
+    margin: 40px auto;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px gray;
+}
+
+/* title */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: var(--text-primary);
+}
+
+
+/* Section styling */
+p {
+    margin: 0 40px 20px;
+    color: var(--text-primary);
+}
+
+/* Product Card Feel */
+p , .suggest{
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 10px 40px 20px;
+    color: var(--text-primary);
+    border: var(--card-border)
+}
+
+
+ul {
+    list-style: none;
+}
+
+.suggest li{
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border)
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+
+button {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 100px 10px 10px 10px;
+    border-radius: 15px;
+    background-color: var(--footer-background);
+}
+
+.footer-links a, .social-links a {
+    text-decoration: none;
+    color: var(--footer-link);
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+.copyright {
+    font-weight: bold;
+    color: var(--footer-text);
+}
