@@ -225,10 +225,8 @@ body{
 }
 .footer-links a {
     padding: 15px;
-    background: var(--nav-link-bg);
     border-radius: 15px;
     color: var(--cart-text);
-    background-color: var(--nav-link-bg);
     text-decoration: none;
     margin-right: 15px;
     font-size: 20px;
