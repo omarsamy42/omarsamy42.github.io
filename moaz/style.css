@@ -38,14 +38,13 @@ body {
 
 .input{
    
-   background-color:#007EA7 ;
+   background-color:#b19a81 ;
     color: aliceblue;
     width: 80%;
     padding:40px;
     border-radius: 50px;
     text-align: center;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1) ;
-   border: 2px solid #;
+    box-shadow:0 10px 30px #fcafb4 ;
    justify-content: center;
     align-items: center;
     text-decoration: none;
