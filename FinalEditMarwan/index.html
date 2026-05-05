@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="lightmode.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">CompuHub</div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="omar/IT PROJECT1/allproducts.html">Products</a>
+            <a href="shady/contact.html">Contact</a>
+            <a href="aboutlight.html">About</a>
+        </nav>
+
+        <div class="search-wrapper">
+            <input type="text" placeholder="Search products..." class="search-input">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+
+        <div class="nav-icons">
+            <!-- Wrap sign-in in .sign-in-wrapper so JS can hide it -->
+            <div class="sign-in-wrapper icon-btn">
+                <a href="moaz/signup.html" onclick="localStorage.setItem('returnPage', window.location.href)">Sign-In</a>
+            </div>
+            <div onclick="open_close_cart()" class="icon_cart icon-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="count">0</span>
+            </div>
+            <button id="theme-switch" class="icon-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="icon-btn" onclick="goToProfile('shady/profile.html')" id="profile-btn">
+                <i class="fa-solid fa-circle-user"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Swiper Slider -->
+    <div class="slider">
+        <div class="container">
+            <div class="slide-swp mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="web photo.jpeg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="omar/IT PROJECT1/img/pic3.jpeg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="omar/IT PROJECT1/img/pic4.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="Welcome">
+            <h1>Welcome To <b class="logo">Compuhub</b></h1>
+            <div class="question">
+                <h1>What Do You Want ?</h1>
+            </div>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <a href="omar/IT PROJECT1/products.html">
+                    <img src="laptops.jpeg" class="card-img">
+                    <h3>LAPTOPS</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="omar/IT PROJECT1/products2.html">
+                    <img src="accessories.jpeg" class="card-img">
+                    <h3>ACCESSORIES</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="omar/IT PROJECT1/products3.html">
+                    <img src="hardware (1).jpeg" class="card-img">
+                    <h3>HARDWARE COMPONENTS</h3>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Track Order</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Shopping Info</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="social-links">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/?hl=ar"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/?lang=ar"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <div class="copyright">© 2026</div>
+    </footer>
+
+    <!-- Cart Panel -->
+    <div class="cart">
+        <div class="top_cart">
+            <h2>Cart Items : <span class="count_item_cart">0</span></h2>
+            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div class="items_in_cart" id="cart_item"></div>
+        <div class="bottom_cart">
+            <div class="total">
+                <p>Subtotal</p>
+                <p class="price_cart_total">$0</p>
+            </div>
+            <div class="button_cart">
+                <a href="#" class="btn_cart">Checkout</a>
+                <span onclick="open_close_cart()" class="btn_cart trans_bg">Shop More</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="omar/IT PROJECT1/button_dark_light.js"></script>
+    <script src="omar/IT PROJECT1/java.js"></script>
+</body>
+</html>
