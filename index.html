@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="lightmode.css">
 
+
 </head>
 <body>
    
@@ -36,7 +37,8 @@
     <i class="fa-solid fa-cart-shopping"></i>
     <span class="count">0</span>
     </div>
-                <button class="icon-btn" onclick="window.location.href='indexdark.html'">
+                <button id="theme-switch" class="icon-btn" 
+                >
                     <i class="fa-solid fa-moon" ></i>
                 </button>
             <button class="icon-btn" onclick="window.location.href='shady/profile.html'" id="profile-btn">
@@ -45,36 +47,8 @@
             </button>
         </div>
     </header>
-
-    <!-- cart-->
-    <div class="cart  ">
-
-        <div class="top_cart">
-            <h2>Cart Item : <span class="count_item_cart">0</span></h2>
-            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
-        </div>
-
-
-        <div class="items_in_cart" id="cart_item">
-
-</div>
-            
-        <div class="bottom_cart">
-                <div class="total">
-                    <p>subtotal</p>
-                    <p class="price_cart_total">$0</p>
-                </div>
-                <div class="button_cart">
-                    <a  href="#" class="btn_cart">checkout</a>
-                    <span onclick="open_close_cart()" class="btn_cart trans_bg">shop more </span>
-                </div>
-        </div>
-
-
-    </div>
-    
 <!-- swiper  -->
-      <div class="slider">
+     <div class="slider">
         <div class="container">
             <div class="slide-swp mySwiper">
 
@@ -97,10 +71,6 @@
         </div>
         
     </div>
-
-    
-        
-
 
     
     
@@ -155,7 +125,7 @@
      
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="omar/IT PROJECT1/java.js"></script>
+    <script src="omar/IT PROJECT1/button_dark_light.js"></script>
 
 </body>
 </html>
