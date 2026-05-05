@@ -56,7 +56,7 @@ body{
 
 }
 .logo{
-    color:var(--cart-text);
+    color:#ffff;
 }
 .navbar{
     display: grid;
