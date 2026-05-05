@@ -361,8 +361,10 @@ body {
 
 .footer-links a {
     padding: 15px;
+    background: #eeebe8;
     border-radius: 15px;
     color: var(--nav-link-color);
+    background-color: var(--nav-link-bg);
     text-decoration: none;
     margin-right: 15px;
     font-size: 20px;
