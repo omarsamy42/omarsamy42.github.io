@@ -1,0 +1,287 @@
+div img{
+    width: 100%;
+    object-fit: cover;
+}
+@font-face {
+    font-family: 'MyCustomFont'; /* الاسم اللي تختاريه للفونت عشان تستخدميه بعدين */
+    src: url('Cinzel-VariableFont_wght.ttf') format('truetype'); /* المسار الصحيح للملف */
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    background-color: #FCFAF9;
+    font-family: 'MyCustomFont', sans-serif;
+}
+/* nav start */
+nav{
+    background-color: #FCFAF9;
+    position: fixed;
+    z-index: 1000;
+    margin-block: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.tittle{
+    display: flex;
+    width: 30%;
+    
+}
+.t-name h2{
+    color: #3A0D13;
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.t-name h3{
+    color: #5D3537;
+    margin-top: 0;
+    font-size: 18px;
+    
+}
+.title-icon{
+    width: 25%;
+}
+
+.link-con i{
+  font-size: .75rem;
+  color: #C28D56;
+  margin-inline: .625rem;
+}
+.link-con a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight:600;
+    transition-duration: 0.3s;
+}
+.link-con a:hover{
+    color: #C28D56;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.nav-search input{
+ border: none;
+ font-size: 16px;
+ margin-left: 3px;
+}
+.nav-search input:focus{
+ outline: none;
+
+}
+.nav-search{
+    border: #EBE5E1 solid 2px;
+    border-radius: 25px;
+    padding-block: 12px;
+    padding-inline: 15px;
+}
+.nav-search i{
+   color: #3A0D13;
+}
+.links{
+    margin-block:auto;
+    width: 70%;
+}
+.link-bg{
+    width: 100%;
+    margin-block: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.link-con{
+    margin-block: auto;
+    width: fit-content;
+    text-align: center;
+}
+.nav-icons{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-block: auto;
+    font-size: 22px;
+    color: #C28D56;
+    transition-duration: 0.3s;
+}
+.nav-icons i{
+    transition-duration: 0.3s;
+}
+.nav-icons i:hover{
+    color: #683f2c;
+}
+#Menu{
+  display: none;
+}
+.menu-checkbox{
+    display: none;
+}
+.menu-toggle{
+    border: 3px solid #3A0D13;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 1001;
+}
+
+.spans{
+    position: absolute;
+    height: 20px;
+    right: 25px;
+    top: 30px;
+}
+.menu-toggle span{
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: #3A0D13;
+    transition: 0.3s;
+}
+/* end of nav */
+
+
+/* footer */
+.footer {
+    background-color: #140f0a;
+    
+}
+
+.footer-container {
+    
+    width: 90%;
+    margin: 0 auto;
+    background-color: #140f0a;
+    padding-block: 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.brand-column {
+    width: 45%;
+}
+
+.categories-column {
+    width: 25%;
+}
+
+.brand-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.brand-icon {
+    align-items: center;
+    justify-content: center;
+   width: 20%;
+}
+
+.brand-header h2 {
+    color: #C28D56;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.brand-column p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #a29b92;
+}
+
+.categories-column h3 {
+    color: rgb(251, 233, 219);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.categories-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.categories-list li {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.categories-list li a {
+    color: #a29b92;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.categories-list li a:hover {
+    color: #C28D56;
+}
+
+.footer-divider {
+    height: 2px;
+    margin-bottom: 10px;
+    background-color: #39281e;
+
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.copyright-text {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #a29b92;
+}
+
+.legal-links {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+
+.legal-links li a {
+   color: #a29b92;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition-duration: 0.3s;
+}
+
+.legal-links li a:hover {
+    color: #C28D56;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media i {
+    font-size: 24px;
+    color: #a29b92;
+    margin-right: 10px;
+    transition-duration: 0.3s;
+    margin-top: 15px;
+}
+
+.social-media a i:hover {
+    color: #C28D56;
+}
