@@ -395,17 +395,21 @@ button {
 
 .envelope {
   position: relative;
-  height: 260px;
+  height: 280px;
   cursor: pointer;
 }
 
 .env-body {
   position: absolute;
   bottom: 0;
+  z-index: 1; 
   display: grid;
-  place-items: center;
+  justify-items: center; 
+  align-items: end; 
+  gap: 2px;
+  padding-bottom: 40px; 
   width: 100%;
-  height: 180px;
+  height: 220px;
   border-radius: 18px;
   background: linear-gradient(135deg, var(--rose), #fff);
   box-shadow: 0 30px 70px rgba(62, 50, 50, 0.14);
@@ -413,10 +417,11 @@ button {
 
 .flap {
   position: absolute;
-  top: 0;
-  left: 8%;
-  width: 84%;
-  height: 160px;
+  top: 65px;
+  left: 0;
+  z-index: 2; 
+  width: 100%;
+  height: 120px;
   background: var(--champagne);
   clip-path: polygon(50% 100%, 0 0, 100% 0);
   transform-origin: top;
@@ -466,7 +471,7 @@ button {
 .cake-page h1,
 .final-page h1 {
   max-width: 900px;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
 
 
@@ -1252,15 +1257,17 @@ footer,
   }
 
   .envelope {
-    height: 220px;
+    height: 230px;
   }
 
   .env-body {
-    height: 150px;
+    height: 180px;
+    padding-bottom: 32px; 
   }
 
   .flap {
-    height: 135px;
+    top: 53px;
+    height: 100px;
   }
 
   .letter-paper {
