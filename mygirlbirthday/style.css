@@ -23,6 +23,7 @@ html {
 body {
   min-height: 100vh;
   overflow-x: hidden;
+  color-scheme: light only;
   color: var(--cocoa);
   font-family: var(--body);
    position: relative;
