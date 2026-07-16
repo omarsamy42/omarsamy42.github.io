@@ -1394,3 +1394,46 @@ footer,
 #typedLetter {
     white-space: pre-wrap;
 }
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: only light;
+  }
+
+  body {
+    color: var(--cocoa) !important;
+    background: radial-gradient(circle at top left, #fff 0%, var(--warm-white) 35%, var(--blush) 100%) !important;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.35) !important;
+    border: 1px solid rgba(255, 255, 255, 0.55) !important;
+  }
+
+  .hero-desc,
+  .sub-hero p,
+  .polaroid p,
+  .reason-front h3,
+  .letter-paper,
+  .letter-paper p,
+  .footer {
+    color: var(--cocoa) !important;
+  }
+
+  .letter-paper {
+    background: #fffaf5 !important;
+  }
+
+  .night {
+    color: #fff !important;
+    background: radial-gradient(circle at top, #453636 0%, #191317 70%) !important;
+  }
+
+  .final-page {
+    background: linear-gradient(rgba(25, 19, 23, 0.45), rgba(25, 19, 23, 0.86)), var(--final-image) center/cover !important;
+  }
+}
