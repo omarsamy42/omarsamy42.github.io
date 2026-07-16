@@ -466,6 +466,7 @@ button {
 .cake-page h1,
 .final-page h1 {
   max-width: 900px;
+  margin-bottom: 18px;
 }
 
 
