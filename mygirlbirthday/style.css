@@ -505,6 +505,7 @@ button {
 .cake {
   position: relative;
   width: 390px;
+  max-width: 88vw;
   height: 330px;
   margin-bottom: 38px;
   overflow: visible;
@@ -515,6 +516,7 @@ button {
   left: 50%;
   bottom: -18px;
   width: 390px;
+  max-width: 88vw;
   height: 34px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.34);
