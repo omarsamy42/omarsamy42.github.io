@@ -1103,8 +1103,14 @@ footer,
     width: 100%;
     max-width: 100%;
     justify-content: center;
-    font-size: 12px;
+    font-size: 11px;
+    flex-wrap: wrap; 
+    overflow-x: visible;
+    gap: 6px;
   }
+  .nav-links a {
+  padding: 6px 9px;  /* was 8px 12px (inherited from tablet rule) */
+}
 
   .cursor-glow {
     display: none;
