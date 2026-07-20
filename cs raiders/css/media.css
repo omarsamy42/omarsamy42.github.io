@@ -407,9 +407,10 @@
     }
 
     .home-container span {
-        font-size: 36px;
+        /* font-size: 36px;
         left: 40%;
-        bottom: 64.5%;
+        bottom: 64.5%; */
+        display: none;
     }
 
     .home-container h2 {
