@@ -354,7 +354,9 @@ nav {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.5px;
-    transition:
+    transition: ;  
+    /* في سطر اتمسح هناا  */
+        }
 /* start of home */
 .HOME {
     padding-top: 70px;
