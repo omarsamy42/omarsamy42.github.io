@@ -1,5 +1,9 @@
 
 /* start of home */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 
 .HOME {
     padding-top: 70px;
