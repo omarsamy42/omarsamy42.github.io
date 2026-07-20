@@ -17,6 +17,7 @@
     background-color: #140f0a72;
     overflow: auto;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 .home-container h1 {
