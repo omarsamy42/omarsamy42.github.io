@@ -16,7 +16,7 @@
     height: 100%;
     background-color: #140f0a72;
     overflow: auto;
-    padding: 30px;
+    padding-block: 30px;
     box-sizing: border-box;
 }
 
