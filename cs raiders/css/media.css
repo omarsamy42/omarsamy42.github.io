@@ -182,28 +182,29 @@
     }
 
     .home-container h1::after {
-        width: 100px;
+        width: 150px;
         left: 40%;
     }
 
     .home-container h1::before {
-        width: 100px;
+        width: 150px;
     }
 
     .home-container span {
-        left: 31%;
-        bottom: 64%;
+        /* left: 31%;
+        bottom: 64%; */
+        display: none;
     }
 
     .home-container h2 {
         font-size: 22px;
-        bottom: 35%;
+        bottom: 34%;
         left: 5%;
     }
 
     .home-btn {
         font-size: 25px;
-        bottom: 25%;
+        bottom: 24%;
         left: 5%;
     }
 
