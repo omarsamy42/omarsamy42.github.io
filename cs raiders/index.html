@@ -12,6 +12,7 @@
 </head>
 
 <body>
+   
     <nav>
         <div class="tittle">
             <div class="title-icon"><img src="FavNav-removebg-preview.png" alt="navIcon"></div>
@@ -23,9 +24,10 @@
         <input type="checkbox" id="menu-bar" class="menu-checkbox">
         <label for="menu-bar" class="menu-toggle">
             <div class="spans">
-            <span></span>
-            <span></span>
-            <span></span></div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </label>
         <div class="links">
             <div class="link-bg">
@@ -53,7 +55,233 @@
         </div>
     </nav>
 
-<div style="height: 300px;"></div>
+    <div class="HOME">
+        <div class="home-container">
+            <h1>Discover Magic <br> Through Books</h1>
+            <span><i class="fa-brands fa-canadian-maple-leaf"></i></span>
+            <H2>Every Story Begins With A Spell</H2>
+            <button class="home-btn"><a href="books.html">EXPLORE BOOKS <i
+                        class="fa-solid fa-wand-sparkles"></i></a></button>
+        </div>
+    </div>
+    <div class="home-card-container">
+        <div class="home-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for books, authors, categories...">
+        </div>
+        <div class="card-container">
+            <div class="category-card">
+                <input type="checkbox" id="toggle-special" class="card-toggle">
+                <div class="card-header-content">
+                    <h3 class="card-title">SPECIAL COLLECTIONS</h3>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="card-dropdown-menu">
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-book item-icon"></i> Rare Editions
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-box item-icon"></i> Limited Box Sets
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-music item-icon"></i> Curated Playlists
+                    </a>
+                </div>
+
+                <label for="toggle-special" class="arrow-label">
+                    <span class="arrow-icon"></span>
+                </label>
+            </div>
+            <div class="category-card">
+                <input type="checkbox" id="toggle-fiction" class="card-toggle">
+
+                <div class="card-header-content">
+                    <h3 class="card-title">FICTION</h3>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-glasses"></i>
+                    </div>
+                </div>
+
+                <div class="card-dropdown-menu">
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-star item-icon"></i> Fantasy & Sci-Fi
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-magnifying-glass item-icon"></i> Mystery & Thriller
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-brands fa-fort-awesome item-icon"></i> Historical Fiction
+                    </a>
+                </div>
+
+                <label for="toggle-fiction" class="arrow-label">
+                    <span class="arrow-icon"></span>
+                </label>
+            </div>
+            <div class="category-card">
+                <input type="checkbox" id="toggle-non-fiction" class="card-toggle">
+
+                <div class="card-header-content">
+                    <h3 class="card-title">NON-FICTION</h3>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                </div>
+                <div class="card-dropdown-menu">
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-brain item-icon"></i> Self-Improvement
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-chart-line item-icon"></i> Business & Finance
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-feather-pointed item-icon"></i> History & Biographies
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-atom item-icon"></i> Science & Technology
+                    </a>
+                </div>
+                <label for="toggle-non-fiction" class="arrow-label">
+                    <span class="arrow-icon"></span>
+                </label>
+            </div>
+            <div class="category-card">
+                <input type="checkbox" id="toggle-edu" class="card-toggle">
+                <div class="card-header-content">
+                    <h3 class="card-title">EDUCATIONAL</h3>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                </div>
+
+                <div class="card-dropdown-menu">
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-laptop-code item-icon"></i> Computer Science
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-calculator item-icon"></i> Math & Statistics
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-language item-icon"></i> Languages & Skills
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-microscope item-icon"></i> Research & Academic
+                    </a>
+                </div>
+                <label for="toggle-edu" class="arrow-label">
+                    <span class="arrow-icon"></span>
+                </label>
+            </div>
+            <div class="category-card">
+                <input type="checkbox" id="toggle-children" class="card-toggle">
+                <div class="card-header-content">
+                    <h3 class="card-title">CHILDREN BOOKS</h3>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-children"></i>
+                    </div>
+                </div>
+
+                <div class="card-dropdown-menu">
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-book-open-reader item-icon"></i> Picture & Story Books
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-puzzle-piece item-icon"></i> Early Learning
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-table-tennis-paddle-ball item-icon"></i> Comics & Adventures
+                    </a>
+                </div>
+
+                <label for="toggle-children" class="arrow-label">
+                    <span class="arrow-icon"></span>
+                </label>
+            </div>
+            <div class="category-card">
+                <!-- التريكة: تشيك بوكس مخفي للتحكم في الفتح والقفل -->
+                <input type="checkbox" id="toggle-religion" class="card-toggle">
+
+                <!-- الجزء العلوي الأساسي من الكارد -->
+                <div class="card-header-content">
+                    <h3 class="card-title">RELIGION</h3>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-mosque"></i>
+                    </div>
+                </div>
+
+                <!-- القائمة المنسدلة (الأسماء والأيقونات الفرعية) -->
+                <div class="card-dropdown-menu">
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-book-quran item-icon"></i> Sacred Texts & Studies
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-kaaba item-icon"></i> History & Civilization
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-hands-praying item-icon"></i> Ethics & Spirituality
+                    </a>
+                </div>
+
+                <!-- السهم (Label مربوط بالـ Checkbox عشان لما يتضغط عليه يفتح) -->
+                <label for="toggle-religion" class="arrow-label">
+                    <span class="arrow-icon"></span>
+                </label>
+            </div>
+            <div class="category-card">
+                <input type="checkbox" id="toggle-arts" class="card-toggle">
+                <div class="card-header-content">
+                    <h3 class="card-title">ARTS & LIFE-STYLE</h3>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-dove"></i>
+                    </div>
+                </div>
+
+                <div class="card-dropdown-menu">
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-palette item-icon"></i> Visual & Fine Arts
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-pen-nib item-icon"></i> Design & Fashion
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-utensils item-icon"></i> Culinary & Wellbeing
+                    </a>
+                </div>
+                <label for="toggle-arts" class="arrow-label">
+                    <span class="arrow-icon"></span>
+                </label>
+            </div>
+            <div class="category-card">
+                <input type="checkbox" id="toggle-comics" class="card-toggle">
+
+                <div class="card-header-content">
+                    <h3 class="card-title">COMICS & GRAPHIC NOVELS</h3>
+                    <div class="card-icon" id="cardspicial">
+                        <i class="fa-solid fa-comment-dots"></i>
+                    </div>
+                </div>
+
+                <div class="card-dropdown-menu">
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-mask item-icon"></i> Superhero & Action
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-dragon item-icon"></i> Manga & Anime
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fa-solid fa-user-ninja item-icon"></i> Sci-Fi & Fantasy
+                    </a>
+                </div>
+
+                <label for="toggle-comics" class="arrow-label">
+                    <span class="arrow-icon"></span>
+                </label>
+            </div>
+        </div>
+    </div>
 
       <div class="footer">
         <div class="footer-container sm-90 md-90">
