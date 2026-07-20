@@ -132,7 +132,7 @@
     }
 
     .tittle {
-        font-size: 28px;
+        font-size: 24px;
         margin-block: auto;
         width: 100%;
     }
@@ -192,12 +192,12 @@
 
     .home-container span {
         left: 31%;
-        bottom: 64%;
+        bottom: 65%;
     }
 
     .home-container h2 {
         font-size: 22px;
-        bottom: 36%;
+        bottom: 35%;
         left: 5%;
     }
 
