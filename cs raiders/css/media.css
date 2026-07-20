@@ -134,7 +134,7 @@
     .tittle {
         font-size: 30px;
         margin-block: auto;
-        width: 95%;
+        width: 100%;
     }
 
     .links i {
@@ -176,7 +176,7 @@
 
 
     .home-container h1 {
-        bottom: 40%;
+        bottom: 38%;
         left: 5%;
         font-size: 65px;
     }
@@ -197,7 +197,7 @@
 
     .home-container h2 {
         font-size: 22px;
-        bottom: 40%;
+        bottom: 36%;
         left: 5%;
     }
 
