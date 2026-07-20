@@ -132,7 +132,7 @@
     }
 
     .tittle {
-        font-size: 30px;
+        font-size: 28px;
         margin-block: auto;
         width: 100%;
     }
@@ -176,7 +176,7 @@
 
 
     .home-container h1 {
-        bottom: 38%;
+        bottom: 37%;
         left: 5%;
         font-size: 65px;
     }
@@ -191,8 +191,8 @@
     }
 
     .home-container span {
-        left: 30%;
-        bottom: 66%;
+        left: 31%;
+        bottom: 64%;
     }
 
     .home-container h2 {
@@ -203,7 +203,7 @@
 
     .home-btn {
         font-size: 25px;
-        bottom: 30%;
+        bottom: 25%;
         left: 5%;
     }
 
@@ -213,6 +213,13 @@
         font-size: 18px;
         margin-left: 3px;
     }
+    .card-title {
+    color: var(--text-dark);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+}
 }
 
 @media screen and (min-width:576px) and (max-width:1040px) {
