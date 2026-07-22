@@ -184,6 +184,7 @@
     .home-container h1::after {
         width: 150px;
         left: 40%;
+        display: none;
     }
 
     .home-container h1::before {
