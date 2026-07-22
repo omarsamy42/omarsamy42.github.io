@@ -117,7 +117,7 @@
 
     .tittle h2 {
         width: 100%;
-        font-size: 25px;
+        font-size: 22px;
     }
 
     #Menu {
@@ -171,14 +171,14 @@
     }
 
     .HOME {
-        height: 75vh;
+        height: 90vh;
     }
 
 
     .home-container h1 {
-        bottom: 37%;
+        bottom: 31%;
         left: 5%;
-        font-size: 65px;
+        font-size: 55px;
     }
 
     .home-container h1::after {
@@ -197,14 +197,14 @@
     }
 
     .home-container h2 {
-        font-size: 22px;
-        bottom: 34%;
+        font-size: 20px;
+        bottom: 30%;
         left: 5%;
     }
 
     .home-btn {
         font-size: 25px;
-        bottom: 24%;
+        bottom: 18%;
         left: 5%;
     }
 
@@ -477,7 +477,7 @@
 
     .css-carousel {
         height: auto;
-        min-height: 340px;
+        min-height: 380px;
     }
 
     .categories {
