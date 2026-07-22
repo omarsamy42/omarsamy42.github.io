@@ -129,9 +129,9 @@
 .css-carousel {
     position: relative;
     width: 100%;
-    height: 500px;
     margin: 0 auto;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
     border-radius: 15px;
 }
 
@@ -143,24 +143,27 @@
 /* التراك اللي شايل السلايدات */
 .carousel-track {
     display: flex;
-    width: 300%; /* العرض الإجمالي (100% لكل سلايد) */
-    height: 100%;
+    align-items: stretch;
+    width: 300%; 
     transition: transform 0.5s ease-in-out; /* smooth transition*/
 }
 
 /* السلايد الواحد */
 .carousel-slide {
-    width: 33.333%; /* تلت المساحة الكلية */
-    height: 100%;
+    width: 33.333%; 
     position: relative;
 }
-
-.carousel-slide img {
+.carousel-slide > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+.carousel-slide .books img {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+}
 /* ---  التنقل --- */
 #ctrl-1:checked ~ .carousel-track { transform: translateX(0); }
 #ctrl-2:checked ~ .carousel-track { transform: translateX(-33.333%); }
