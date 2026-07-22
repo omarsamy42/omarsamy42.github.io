@@ -3,7 +3,7 @@
     gap: 10px;
     padding: 20px;
     justify-content: center; 
-    width: 90%;
+    width: 1550px;
     margin: auto;
 }
 h1 {
@@ -256,4 +256,5 @@ h1::after {
     color: #c49439;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
 }
+
 
