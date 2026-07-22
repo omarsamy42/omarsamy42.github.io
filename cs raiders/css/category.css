@@ -113,3 +113,22 @@
     border-top-left-radius: 60%;
     border-bottom-left-radius: 60%;
 }
+/* for categries itself */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+}
+.container p{
+    
+    text-align: center;
+    color: #3A0D13;
+}
