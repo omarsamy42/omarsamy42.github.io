@@ -281,6 +281,7 @@ nav {
     width: 50%;
     padding: 45px 40px;
     order: 2;
+    box-sizing: border-box;
 }
     .form-content h2 {
         color: #3A0D13;
@@ -402,7 +403,7 @@ nav {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.5px;
-    transition: ;  
+
     /* في سطر اتمسح هناا  */
         }
 
