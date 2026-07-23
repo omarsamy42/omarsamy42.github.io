@@ -206,10 +206,9 @@ h1::after {
 }
 
 /* ---  التنقل --- */
-#ctrl-1:checked ~ .carousel-track { transform: translateX(0); }
-#ctrl-2:checked ~ .carousel-track { transform: translateX(-33.333%); }
-#ctrl-3:checked ~ .carousel-track { transform: translateX(-66.666%); }
-
+#ctrl-1:checked ~ .carousel-viewport .carousel-track { transform: translateX(0); }
+#ctrl-2:checked ~ .carousel-viewport .carousel-track { transform: translateX(-33.333%); }
+#ctrl-3:checked ~ .carousel-viewport .carousel-track { transform: translateX(-66.666%); }
 /* تنسيق الأسهم */
 .carousel-footer {
     display: flex;
