@@ -114,15 +114,12 @@ h1::after {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
-}
-.button {
+}.button {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    margin-bottom: -110px;
-    padding-bottom: 200px;
-    padding-top: 5px;
-    color :#b77904
+    margin: 0;
+    color: #b77904;
 }
 .h3 {
     font-size: 25px;
@@ -170,8 +167,14 @@ h1::after {
 .css-carousel {
     position: relative;
     width: 100%;
-    height: 511px;
     margin: 0 auto;
+   
+}
+
+.carousel-viewport {
+    position: relative;
+    width: 100%;
+    height: 511px;
     overflow: hidden;
     border-radius: 15px;
 }
@@ -208,35 +211,28 @@ h1::after {
 #ctrl-3:checked ~ .carousel-track { transform: translateX(-66.666%); }
 
 /* تنسيق الأسهم */
+.carousel-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 15px;
+}
+
 .carousel-arrows {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* عشان ما يغطيش على السلايدر نفسه */
     z-index: 10;
 }
 
-/* إخفاء كل الأسهم افتراضياً */
-.arrows-group {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
+.carousel-arrows .arrows-group {
     display: none;
-    justify-content: space-between;
-    padding: 0 20px;
-    box-sizing: border-box;
 }
 
 /* إظهار الأسهم الخاصة بالسلايد الشغال دلوقتي بس */
-#ctrl-1:checked ~ .carousel-arrows .slide1-arrows,
-#ctrl-2:checked ~ .carousel-arrows .slide2-arrows,
-#ctrl-3:checked ~ .carousel-arrows .slide3-arrows {
+#ctrl-1:checked ~ .carousel-footer .slide1-arrows,
+#ctrl-2:checked ~ .carousel-footer .slide2-arrows,
+#ctrl-3:checked ~ .carousel-footer .slide3-arrows {
     display: flex;
 }
-
 /* تصميم السهم نفسه */
 .arrow {
     color:  #b77904;
