@@ -220,6 +220,31 @@
     letter-spacing: 1px;
     margin: 0;
 }
+    .sm-60 {
+        width: 60%;
+    }
+
+    .mr-center {
+        margin-inline: auto;
+    }
+
+    .categoriies h2::after {
+        right: 2%;
+        top: 3.5%;
+        width: 60px;
+    }
+
+    .categoriies h2::before {
+        left: 2%;
+        top: 3.5%;
+        width: 60px;
+    }
+    .f-col-sm {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
 
  /* enas query - mobile */
   .carousel-viewport {
@@ -475,13 +500,6 @@
         height: 70vh;
     }
 
-    .home-container span {
-        /* font-size: 36px;
-        left: 40%;
-        bottom: 64.5%; */
-        display: none;
-    }
-
     .home-container h2 {
         background: linear-gradient(135deg, #916610 20%, #d7bc77 50%, #ab7707 80%);
         filter: drop-shadow(0px 0px 6px rgba(46, 29, 0, 0.382));
@@ -512,6 +530,20 @@
     .books {
         width: 30%;
     }
+    .md-80{
+        width: 80%;
+    }
+  
+    .categoriies h2::after {
+        right: 22%;
+        top: 9%;
+        width: 80px;
+    }
+
+    .categoriies h2::before {
+        left: 22%;
+        top: 9%;
+      
 
     /*For categories*/
 .categories-header {
