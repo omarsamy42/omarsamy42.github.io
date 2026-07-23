@@ -238,12 +238,12 @@
         box-sizing: border-box;
     }
 
-    .books {
-        width: 45%;     
-        height: 220px;
-        margin: 0;
+.books {
+        width: 45%;
+        height: auto;
+        min-height: 220px;
+        margin: 0 0 15px;
     }
-
     .arrow {
         width: 36px;
         height: 36px;
