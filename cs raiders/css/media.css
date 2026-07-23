@@ -543,6 +543,8 @@
     .categoriies h2::before {
         left: 22%;
         top: 9%;
+        width: 80px;
+    }
       
 
     /*For categories*/
